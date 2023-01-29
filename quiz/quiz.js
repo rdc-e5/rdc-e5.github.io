@@ -134,7 +134,8 @@
     ];
   
     // Kick things off
- 
+    buildQuiz();
+
     // Pagination
     const previousButton = document.getElementById("previous");
     const nextButton = document.getElementById("next");
@@ -142,11 +143,8 @@
     let currentSlide = 0;
   
     // Show the first slide
-    function startQuiz() {
-    buildQuiz();
     showSlide(currentSlide);
-    };
-    document.getElementById("start").addEventListener('click', startQuiz);
+
     // Event listeners
     submitButton.addEventListener('click', showResults);
     previousButton.addEventListener("click", showPreviousSlide);
