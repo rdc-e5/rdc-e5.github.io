@@ -65,9 +65,14 @@
 
 
       });
-  
+      if (numCorrect === myQuestions.length) {
+        window.location.href = 'win/index.html';
+      }
+      else {
+        window.location.href = 'lose/index.html'
+      }
       // show number of correct answers out of total
-      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+      //resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     }
   
     function showSlide(n) {
@@ -104,30 +109,29 @@
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "Who invented JavaScript?",
+        question: "Test vraag 1",
         answers: {
-          a: "Douglas Crockford",
-          b: "Sheryl Sandberg",
-          c: "Brendan Eich"
+          a: "Fout",
+          b: "Goed",
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "Test vraag 2",
+        answers: {
+          a: "Fout",
+          b: "Fout",
+          c: "Goed"
         },
         correctAnswer: "c"
       },
       {
-        question: "Which one of these is a JavaScript package manager?",
+        question: "Test vraag 3",
         answers: {
-          a: "Node.js",
-          b: "TypeScript",
-          c: "npm"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "Which tool can you use to ensure code quality?",
-        answers: {
-          a: "Angular",
-          b: "jQuery",
-          c: "RequireJS",
-          d: "ESLint"
+          a: "Fout",
+          b: "Fout",
+          c: "Fout",
+          d: "Goed"
         },
         correctAnswer: "d"
       }
