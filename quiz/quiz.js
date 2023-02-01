@@ -109,29 +109,29 @@
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "Test vraag 1",
+        question: "Heeft u een dubbele nationaliteit",
         answers: {
-          a: "Fout",
-          b: "Goed",
+          a: "Ja",
+          b: "Nee",
         },
         correctAnswer: "b"
       },
       {
-        question: "Test vraag 2",
+        question: "Bij zorgverzekeraar zit u?",
         answers: {
-          a: "Fout",
-          b: "Fout",
-          c: "Goed"
+          a: "VGZ, IZZ",
+          b: "Menzis, VinkVink",
+          c: "Anders"
         },
         correctAnswer: "c"
       },
       {
-        question: "Test vraag 3",
+        question: "Wat is uw maandelijkse inkomen?",
         answers: {
-          a: "Fout",
-          b: "Fout",
-          c: "Fout",
-          d: "Goed"
+          a: "&euro;500 of minder",
+          b: "Tussen &euro;500 en &euro;1000",
+          c: "Tussen &euro;1000 en &euro;2500",
+          d: "Meer dan &euro;2500"
         },
         correctAnswer: "d"
       }
